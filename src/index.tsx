@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './Routes';
 import reportWebVitals from './reportWebVitals';
+import NavBar from './Components/AppBar';
+import Home from './Pages/Home/Home';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
