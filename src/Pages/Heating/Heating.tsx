@@ -4,7 +4,7 @@ import PDFViewer from '../../Components/PDFViewer'
 
 function Heating() {
   return (
-    <div className="App">
+    <div>
       <NavBar/>
       <PDFViewer
         path='/cashellHeatingBrochure.pdf'

@@ -4,7 +4,7 @@ import PDFViewer from '../../Components/PDFViewer'
 
 function BathroomPage() {
   return (
-    <div className="App">
+    <div>
       <NavBar/>
       <PDFViewer
         path='/cashellBathroomBrochure.pdf'

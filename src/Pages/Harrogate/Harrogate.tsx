@@ -4,7 +4,7 @@ import PDFViewer from '../../Components/PDFViewer'
 
 function Harrogate() {
   return (
-    <div className="App">
+    <div>
       <NavBar/>
       <PDFViewer
         path='/harrogateBrochure.pdf'

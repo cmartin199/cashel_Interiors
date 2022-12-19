@@ -3,7 +3,7 @@ import NavBar from '../../Components/AppBar';
 function MaintenancePage() {
   console.log('maintenance');
   return (
-    <div className="App">
+    <div>
       <NavBar/>
       <h1>
         Maintenance

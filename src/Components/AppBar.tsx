@@ -5,10 +5,11 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import './AppBar.css';
 
 function NavBar() {
   return (
-    <AppBar position="static">
+    <AppBar position="static" className='app-bar'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
