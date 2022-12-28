@@ -4,10 +4,10 @@ import PDFViewer from '../../Components/PDFViewer'
 
 function BathroomPage() {
   return (
-    <div>
+    <div style={{height: '100rem'}}>
       <NavBar/>
       <PDFViewer
-        path='/cashellBathroomBrochure.pdf'
+        path='/cashelBathroomBrochure.pdf'
         alternateText='Tile Brochure Not Loaded' />
     </div>
   );

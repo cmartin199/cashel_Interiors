@@ -5,72 +5,76 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+
 import './AppBar.css';
 
+import { createTheme } from '@mui/material/styles';
+import { green } from '@mui/material/colors';
+import { ThemeProvider } from '@emotion/react';
+
 function NavBar() {
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: green[800],
+      },
+    },
+    typography: {
+      "fontFamily": `'Pirulen Rg', sans-serif`,
+      "fontSize": 16,
+      "fontWeightLight": 300,
+      "fontWeightRegular": 400,
+      "fontWeightMedium": 500
+     }
+  });
   return (
-    <AppBar position="static" className='app-bar'>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button
-              href="/"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Home
-            </Button>
-            <Button
-              href="/Maintenance"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Maintenance
-            </Button>
-            <Button
-              href="/Tiling-Division"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Tiling
-            </Button>
-            <Button
-              href="/Bathrooms"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Bathrooms
-            </Button>
-            <Button
-              href="/Harrogate"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Harrogate Collection
-            </Button>
-            <Button
-              href="/Heating"
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Heating
-            </Button>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <ThemeProvider  theme={theme}>
+      <AppBar position="static">
+          <Container maxWidth="xl">
+            <Toolbar disableGutters>
+              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                <Button
+                  href="/"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Home
+                </Button>
+                <Button
+                  href="/Maintenance"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Maintenance
+                </Button>
+                <Button
+                  href="/Tiling-Division"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Tiling
+                </Button>
+                <Button
+                  href="/Bathrooms"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Bathrooms
+                </Button>
+                <Button
+                  href="/Harrogate"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Harrogate Collection
+                </Button>
+                <Button
+                  href="/Heating"
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  Heating
+                </Button>
+              </Box>
+            </Toolbar>
+          </Container>
+        </AppBar>
+
+    </ThemeProvider>
   );
 }
 export default NavBar;
