@@ -1,5 +1,4 @@
 import NavBar from '../../Components/AppBar';
-
 import PDFViewer from '../../Components/PDFViewer'
 
 function BathroomPage() {
