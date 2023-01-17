@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 import './AppBar.css';
 
@@ -24,54 +25,62 @@ function NavBar() {
       "fontWeightLight": 300,
       "fontWeightRegular": 400,
       "fontWeightMedium": 500
-     }
+    }
   });
   return (
-    <ThemeProvider  theme={theme}>
+    <ThemeProvider theme={theme}>
       <AppBar position="static">
-          <Container maxWidth="xl">
-            <Toolbar disableGutters>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              <Link to="/">
                 <Button
-                  href="/"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Home
                 </Button>
+              </Link>
+
+              <Link to="/Maintenance">
                 <Button
-                  href="/Maintenance"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Maintenance
                 </Button>
+              </Link>
+              <Link to="/Tiling-Division">
                 <Button
-                  href="/Tiling-Division"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Tiling
                 </Button>
+              </Link>
+              <Link to="/Bathrooms">
                 <Button
-                  href="/Bathrooms"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Bathrooms
                 </Button>
+              </Link>
+              <Link to="/Harrogate">
                 <Button
-                  href="/Harrogate"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Harrogate Collection
-                </Button>
+                </Button>`
+              </Link>
+              <Link to="/Heating">
                 <Button
-                  href="/Heating"
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
                   Heating
                 </Button>
-              </Box>
-            </Toolbar>
-          </Container>
-        </AppBar>
+              </Link>
+
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
 
     </ThemeProvider>
   );
