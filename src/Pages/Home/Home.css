@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/pirulen');
 .App {
-  background-image: url('../../resources/cashelBackground.jpeg');
+  /*background-image: url('../../resources/cashelBackground.jpeg');*/
   text-align: center;
   min-height: 100vh;
   display: flex;
