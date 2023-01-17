@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/cachel_interiors/static/css/main.689415dc.css",
+    "main.css": "/cachel_interiors/static/css/main.1f272cd8.css",
     "main.js": "/cachel_interiors/static/js/main.03047ce4.js",
     "static/js/787.8c4e3574.chunk.js": "/cachel_interiors/static/js/787.8c4e3574.chunk.js",
-    "static/media/cashelBackground.jpeg": "/cachel_interiors/static/media/cashelBackground.d73b261607314ddf3da8.jpeg",
     "index.html": "/cachel_interiors/index.html",
-    "main.689415dc.css.map": "/cachel_interiors/static/css/main.689415dc.css.map",
+    "main.1f272cd8.css.map": "/cachel_interiors/static/css/main.1f272cd8.css.map",
     "main.03047ce4.js.map": "/cachel_interiors/static/js/main.03047ce4.js.map",
     "787.8c4e3574.chunk.js.map": "/cachel_interiors/static/js/787.8c4e3574.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.689415dc.css",
+    "static/css/main.1f272cd8.css",
     "static/js/main.03047ce4.js"
   ]
 }
