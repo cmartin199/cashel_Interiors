@@ -4,10 +4,10 @@ import PDFViewer from '../../Components/PDFViewer'
 
 function Harrogate() {
   return (
-    <div style={{height: '100rem'}}>
-      <NavBar/>
+    <div style={{ height: '100rem' }}>
+      <NavBar />
       <PDFViewer
-        path='/harrogateBrochure.pdf'
+        path={`%PUBLIC_URL%/harrogateBrochure.pdf`}
         alternateText='Tile Brochure Not Loaded' />
     </div>
   );
