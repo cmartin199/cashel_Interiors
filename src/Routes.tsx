@@ -10,6 +10,8 @@ import Harrogate from "./Pages/Harrogate/Harrogate"
 
 export default function App() {
   return (
+    <Home />
+    /*
     <BrowserRouter>
       <Routes>
         <Route path="/" index element={<Home />} />
@@ -20,5 +22,6 @@ export default function App() {
         <Route path="Harrogate" element={<Harrogate />} />
       </Routes>
     </BrowserRouter>
+    */
   );
 }
