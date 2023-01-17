@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/pirulen');
+/*@import url('https://fonts.cdnfonts.com/css/pirulen');*/
 .App {
   background-image: url('../../resources/cashelBackground.jpeg');
   text-align: center;
@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  font-family: 'Pirulen Rg', sans-serif;
+  /*font-family: 'Pirulen Rg', sans-serif;*/
   font-weight: bold;
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: white;
@@ -23,6 +23,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
