@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cashel_interiors/static/css/main.1f272cd8.css",
-    "main.js": "/cashel_interiors/static/js/main.19607e55.js",
-    "static/js/787.8c4e3574.chunk.js": "/cashel_interiors/static/js/787.8c4e3574.chunk.js",
-    "index.html": "/cashel_interiors/index.html",
-    "main.1f272cd8.css.map": "/cashel_interiors/static/css/main.1f272cd8.css.map",
-    "main.19607e55.js.map": "/cashel_interiors/static/js/main.19607e55.js.map",
-    "787.8c4e3574.chunk.js.map": "/cashel_interiors/static/js/787.8c4e3574.chunk.js.map"
+    "main.css": "/cashel_Interiors/static/css/main.1f272cd8.css",
+    "main.js": "/cashel_Interiors/static/js/main.2a414fb2.js",
+    "static/js/787.8c4e3574.chunk.js": "/cashel_Interiors/static/js/787.8c4e3574.chunk.js",
+    "index.html": "/cashel_Interiors/index.html",
+    "main.1f272cd8.css.map": "/cashel_Interiors/static/css/main.1f272cd8.css.map",
+    "main.2a414fb2.js.map": "/cashel_Interiors/static/js/main.2a414fb2.js.map",
+    "787.8c4e3574.chunk.js.map": "/cashel_Interiors/static/js/787.8c4e3574.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f272cd8.css",
-    "static/js/main.19607e55.js"
+    "static/js/main.2a414fb2.js"
   ]
 }
