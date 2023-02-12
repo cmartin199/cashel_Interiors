@@ -1,4 +1,5 @@
-import './PDFViewer.style.css'
+import React from 'react';
+import './PDFViewer.style.css';
 
 interface Params {
   path: string;

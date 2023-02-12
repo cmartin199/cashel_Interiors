@@ -1,5 +1,6 @@
+import React from 'react';
 import NavBar from '../../Components/AppBar';
-import PDFViewer from '../../Components/PDFViewer'
+import PDFViewer from '../../Components/PDFViewer';
 import pdf from './cashelBathroomBrochure.pdf';
 
 function BathroomPage() {

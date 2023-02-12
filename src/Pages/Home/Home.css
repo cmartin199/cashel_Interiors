@@ -16,16 +16,24 @@
   color: black;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width:420px) {
+  .App {
+    background-image: url('../../resources/cashelBackground.jpeg');
+    text-align: center;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    align-items: top;
+    font-size: calc(8px + 1.5vmin);
+    font-family: 'Pirulen Rg', sans-serif;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: white;
+    color: black;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.App-link {
+  color: #61dafb;
 }
