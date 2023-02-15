@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { createTheme } from '@mui/material/styles';
 import { green } from '@mui/material/colors';
 import { ThemeProvider } from '@emotion/react';
-import { 
+import {
   AppBar,
   Box,
   Toolbar,
@@ -20,22 +20,14 @@ import MenuIcon from "@mui/material/Menu";
 import { Link } from 'react-router-dom';
 
 import './AppBar.css';
+// eslint-disable-next-line  @typescript-eslint/no-explicit-any
 
-const useStyles = makeStyles((theme: any) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  list: {
-    width: 250,
-  },
-}));
+const menuButton = {
+  marginRight: 2,
+};
 
 function NavBar() {
   const [open, setOpen] = useState(false);
-  const classes = useStyles();
 
   const theme = createTheme({
     palette: {
@@ -71,12 +63,13 @@ function NavBar() {
           <Toolbar disableGutters>
             <IconButton
               edge="start"
-              className={classes.menuButton}
+              sx={{ ...menuButton }}
               color="inherit"
               aria-label="menu"
               aria-controls="simple-menu"
               onClick={handleDrawerOpen}
             >
+              <MenuIcon open={open}/>
             </IconButton>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               <Link to="/">
@@ -92,7 +85,7 @@ function NavBar() {
                 <Button sx={{ ...navBarStyles }}>Bathrooms</Button>
               </Link>
               <Link to="/Harrogate">
-                <Button sx={{...navBarStyles}}>Harrogate Collection</Button>`
+                <Button sx={{ ...navBarStyles }}>Harrogate Collection</Button>`
               </Link>
               <Link to="/Heating">
                 <Button sx={{ ...navBarStyles }}>Heating</Button>
@@ -102,7 +95,7 @@ function NavBar() {
         </Container>
       </AppBar>
       <Drawer open={open} onClose={handleDrawerClose}>
-        <div className={classes.list} role="presentation">
+        <div role="presentation">
           <List>
             <ListItem button component={Link} to="/">
               <ListItemText primary="Home" />
